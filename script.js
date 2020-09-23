@@ -115,6 +115,11 @@ let ctx = canvas.getContext('2d')
 //      END Image
 //---------------------------------
 
+//---------------------------------
+//     POKEBALL
+//---------------------------------
+
+
 // ctx.fillStyle = 'white';
 // ctx.lineWidth = 10
 // ctx.beginPath()
@@ -139,6 +144,10 @@ let ctx = canvas.getContext('2d')
 // ctx.stroke()
 // ctx.fill()
 // ctx.closePath()
+
+//---------------------------------
+//      END 
+//---------------------------------
 
 let myAge = 99;
 
