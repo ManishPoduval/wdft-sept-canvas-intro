@@ -1,9 +1,7 @@
 let canvas = document.querySelector('canvas')
 canvas.style.border = '2px solid black';
-canvas.style.backgroundColor = 'lightGrey'
-
+canvas.style.backgroundColor = '#323d40'
 let ctx = canvas.getContext('2d')
-console.log(ctx)
 
 
 //---------------------------------
@@ -91,10 +89,10 @@ console.log(ctx)
 //--------------------------------
 
 
-ctx.font = '32px Verdana'
+//ctx.font = '32px Verdana'
 // fillText (your text, x, y)
-ctx.fillText('Hello Ironhackers', 100, 70)
-ctx.fillText('Todays lab is hard', 100, 270)
+//ctx.fillText('Hello Ironhackers', 100, 70)
+// ctx.fillText('Todays lab is hard', 100, 270)
 
 //---------------------------------
 //      END Text
@@ -116,3 +114,49 @@ ctx.fillText('Todays lab is hard', 100, 270)
 //---------------------------------
 //      END Image
 //---------------------------------
+
+// ctx.fillStyle = 'white';
+// ctx.lineWidth = 10
+// ctx.beginPath()
+// ctx.arc(200, 200, 100, 0, Math.PI)
+// ctx.lineTo(300, 200)
+// ctx.fill()
+// ctx.stroke()
+// ctx.closePath()
+
+// ctx.fillStyle = 'red';
+// ctx.lineWidth = 10
+// ctx.beginPath()
+// ctx.arc(200, 200, 100, 0, Math.PI, true)
+// ctx.fill()
+// ctx.stroke()
+// ctx.closePath()
+
+// ctx.fillStyle = 'white';
+// ctx.lineWidth = 20
+// ctx.beginPath()
+// ctx.arc(200, 200, 20, 0, Math.PI*2, true)
+// ctx.stroke()
+// ctx.fill()
+// ctx.closePath()
+
+let myAge = 99;
+
+
+class Circle {
+    constructor(radius, x, y, color){
+        this.radius = radius
+        this.x = x;
+        this.y = y;
+        this.color = color
+    }
+
+    draw() {
+        ctx.beginPath()
+        ctx.fillStyle = this.color
+        ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2)
+        ctx.stroke()
+        ctx.fill()
+        ctx.closePath()
+    }
+}
